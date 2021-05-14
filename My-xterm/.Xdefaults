@@ -1,0 +1,31 @@
+! Xterm settings
+! copy & paste
+XTerm*VT100.translations:#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
+
+
+!English font
+xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13
+!Chinese font
+xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
+
+
+!input method
+XTerm*inputMethod:fictx
+
+!scrollbar
+XTerm*scrollBar: ture
+XTerm*rightScrollBar: true
+XTerm*SaveLines: 4096
+
+!xterm.geometry: 80x36
+!xterm*scrollBar: false
+!xterm*rightScrollBar: true
+!xterm*loginshell: ture
+!xterm*cursorBlink: ture
+!xterm*background: black
+!xterm*foreground: gray
+!xterm.borderLess: ture
+!xterm.cursorBlink: ture
+!xterm*colorUL:
+
+!xterm*colorBD: white
