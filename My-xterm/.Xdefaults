@@ -1,7 +1,23 @@
-! Xterm settings
-! copy & paste
-XTerm*VT100.translations:#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
+!===============================
+! - Xterm settings
+! ——————–
 
+!xterm font and locale
+xterm.locale:true
+xterm.utf8: true
+xterm*utf8Title:true
+xterm*fontMenu*fontdefault*Label:Default
+
+! copy & paste
+Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+~Shift~Ctrl<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0) \n\
+~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
+~Shift<BtnUp>: select-end(PRIMARY, CUT_BUFFER0)
+XTerm*VT100.Translations: #override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
+
+!Alt
+xterm*eightBitInput:false
+xterm*altSendsEscape:true
 
 !English font
 xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13
@@ -29,3 +45,7 @@ XTerm*SaveLines: 4096
 !xterm*colorUL:
 
 !xterm*colorBD: white
+
+!———————-
+!- End of setting Xterm
+!=========================
