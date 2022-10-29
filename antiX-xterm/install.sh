@@ -1,9 +1,9 @@
 #!/bin/env bash
 
-sudo mv ~/.Xresources ~/.Xresources.bak
-sudo cp .Xresources ~/
+mv -v ~/.Xresources ~/.Xresources.bak
+cp -rfpv .Xresources ~/
 
-sudo mv ~/.config/xresources.d/xcalc/xcalc.conf ~/.config/xresources.d/xcalc/xcalc.conf.bak
-sudo mv ~/.config/xresources.d/xcolours/antix.conf ~/.config/xresources.d/xcolours/antix.conf.bak
-sudo mv ~/.config/xresources.d/xcolours/zenburn.conf ~/.config/xresources.d/xcolours/zenburn.conf.bak
-sudo cp -r xresources.d ~/.config/
+mv -v ~/.config/xresources.d/xcalc/xcalc.conf ~/.config/xresources.d/xcalc/xcalc.conf.bak
+mv -v ~/.config/xresources.d/xcolours/antix.conf ~/.config/xresources.d/xcolours/antix.conf.bak
+mv -v ~/.config/xresources.d/xcolours/zenburn.conf ~/.config/xresources.d/xcolours/zenburn.conf.bak
+cp -rfpv xresources.d ~/.config/
