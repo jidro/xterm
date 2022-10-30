@@ -20,7 +20,7 @@ xterm*eightBitInput:false
 xterm*altSendsEscape:true
 
 !English font
-xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13
+xterm*faceName: JetBrains Mono Regular:antialias=True:pixelsize=13
 !Chinese font
 xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
 
@@ -63,7 +63,8 @@ XTerm*locale: zh_CN.UTF-8
 !XTerm*faceSize4: 20
 !XTerm*faceSize5: 20
 !XTerm*faceSize6: 20
-!XTerm.cjkWidth:true
+XTerm.cjkWidth:true
+xterm*xftAntialias:true
 
 !———————-
 !- End of setting Xterm
