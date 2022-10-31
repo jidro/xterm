@@ -266,8 +266,10 @@
 
 ! Xterm settings
 ! copy & paste
-XTerm*VT100.translations:#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
-
+!XTerm*VT100.translations:#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
+XTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
 
 !English font
 xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13

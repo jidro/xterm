@@ -20,9 +20,9 @@ xterm*eightBitInput:false
 xterm*altSendsEscape:true
 
 !English font
-xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13
+xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13:italic
 !Chinese font
-xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
+xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13:italic
 
 
 !input method
