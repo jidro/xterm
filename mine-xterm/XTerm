@@ -272,9 +272,9 @@ XTerm*vt100.translations: #override \
     Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
 
 !English font
-xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13
+XTerm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13
 !Chinese font
-xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
+XTerm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
 
 
 !input method
@@ -285,16 +285,16 @@ XTerm*scrollBar: ture
 XTerm*rightScrollBar: true
 XTerm*SaveLines: 4096
 
-!xterm.geometry: 80x36
-!xterm*scrollBar: false
-!xterm*rightScrollBar: true
-!xterm*loginshell: ture
-!xterm*cursorBlink: ture
-!xterm*background: black
-!xterm*foreground: gray
-!xterm.borderLess: ture
-!xterm.cursorBlink: ture
-!xterm*colorUL:
+!XTerm.geometry: 80x36
+!XTerm*scrollBar: false
+!XTerm*rightScrollBar: true
+!XTerm*loginshell: ture
+!XTerm*cursorBlink: ture
+!XTerm*background: black
+!XTerm*foreground: gray
+!XTerm.borderLess: ture
+!XTerm.cursorBlink: ture
+!XTerm*colorUL:
 
-!xterm*colorBD: white
+!XTerm*colorBD: white
 

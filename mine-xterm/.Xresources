@@ -1,0 +1,87 @@
+!===============================
+! - Xterm settings
+! ——————–
+
+!xterm font and locale
+XTerm.locale:true
+XTerm.utf8: true
+XTerm*utf8Title:true
+XTerm*fontMenu*fontdefault*Label:Default
+
+! copy & paste
+Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+~Shift~Ctrl<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0) \n\
+~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
+~Shift<BtnUp>: select-end(PRIMARY, CUT_BUFFER0)
+XTerm*VT100.Translations: #override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
+XTerm*selectToClipboard: true
+
+!Alt
+XTerm*eightBitInput:false
+XTerm*altSendsEscape:true
+
+!Fonts
+XTerm*faceName:fixed:size=11
+XTerm*boldFont:fixed:size=11
+!English font
+XTerm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13:italic
+!Chinese font
+XTerm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13:italic
+
+
+!input method
+XTerm*inputMethod:fictx
+
+!scrollbar
+XTerm*scrollBar: ture
+XTerm*rightScrollBar: true
+XTerm*SaveLines: 4096
+XTerm*jumpScroll: true
+
+!xterm.geometry: 80x36
+!XTerm*scrollBar: false
+!XTerm*rightScrollBar: true
+!XTerm*loginshell: ture
+!XTerm*cursorBlink: ture
+XTerm*background: #000000
+XTerm*foreground: #00cd00
+!XTerm.borderLess: ture
+!XTerm.cursorBlink: ture
+!XTerm*colorUL:
+XTerm*cursorColor: rgb:00/ff/00
+XTerm*borderColor: #000000
+XTerm*scrollColor: #000000
+
+!XTerm*colorBD: white
+
+XTerm*visualBell: false
+XTerm*allowSendEvents: True
+XTerm*sessionMgt: false
+XTerm*activeIcon: true
+XTerm*iconPixmap: /usr/share/icons/locolor/16x16/apps/xterm.xbm
+XTerm*fullscreen: never
+
+Xpdf.title: PDF
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+!Xft.hintstyle: hintslight
+Xft.hintstyle:  hintfull
+Xft.lcdfilter:  lcdlegacy
+
+XTerm*locale: zh_CN.UTF-8
+
+!XTerm*faceSize: 20
+!XTerm*faceSize1: 20
+!XTerm*faceSize2: 20
+!XTerm*faceSize3: 20
+!XTerm*faceSize4: 20
+!XTerm*faceSize5: 20
+!XTerm*faceSize6: 20
+XTerm.cjkWidth:true
+XTerm*xftAntialias:true
+
+!———————-
+!- End of setting Xterm
+!=========================
