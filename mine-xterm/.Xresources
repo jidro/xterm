@@ -47,12 +47,11 @@ XTerm*background: #282A36
 XTerm*foreground: #F8F8F2
 !XTerm.borderLess: ture
 !XTerm.cursorBlink: ture
-!XTerm*colorUL:
+XTerm*colorUL: #0000ff
+XTerm*colorBD: #00ff00
 XTerm*cursorColor: rgb:00/ff/00
 XTerm*borderColor: #000000
 XTerm*scrollColor: #000000
-
-!XTerm*colorBD: white
 
 XTerm*visualBell: false
 XTerm*allowSendEvents: True
