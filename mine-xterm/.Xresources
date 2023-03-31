@@ -1,122 +1,715 @@
 !===============================
-! - Xterm settings
+! - XTerm Settings
 ! ——————–
 
-!xterm font and locale
-XTerm.locale:true
-XTerm.utf8: true
-XTerm*utf8Title:true
-XTerm*fontMenu*fontdefault*Label:Default
+!XTerm font and locale
+XTerm.locale:		true
+XTerm.utf8:		true
+XTerm*utf8Title:	true
+XTerm.VT100.utf8:	true
+XTerm.VT100.locale:	true
+XTerm*locale: 		zh_CN.UTF-8
+XTerm*fontMenu.Label:  	VT Fonts
+XTerm*fontMenu*fontdefault*Label:	Default
+XTerm*fontMenu*font1*Label:  		Unreadable
+XTerm*VT100.font1:	nil2
+XTerm*IconFont:		nil2
+XTerm*fontMenu*font2*Label:	Tiny
+XTerm*VT100.font2:	5x7
+XTerm*fontMenu*font3*Label:	Small
+XTerm*VT100.font3:	6x10
+XTerm*fontMenu*font4*Label:	Medium
+XTerm*VT100.font4:		7x13
+XTerm*fontMenu*font5*Label:	Large
+XTerm*VT100.font5:	9x15
+XTerm*fontMenu*font6*Label:	Huge
+XTerm*VT100.font6:	10x20
+XTerm*fontMenu*fontescape*Label:	Escape Sequence
+XTerm*fontMenu*fontsel*Label:		Selection
+! fontescape and fontsel overridden by application
+XTerm*fontMenu*allow-bold-fonts*Label:	Bold Fonts
+XTerm*fontMenu*font-linedrawing*Label:	Line-Drawing Characters
+XTerm*fontMenu*font-doublesize*Label:	Doublesized Characters
+XTerm*fontMenu*font-loadable*Label:	VT220 Soft Fonts
+XTerm*fontMenu*font-packed*Label:	Packed Font
+XTerm*fontMenu*render-font*Label:	TrueType Fonts
+XTerm*fontMenu*utf8-mode*Label:		UTF-8 Encoding
+XTerm*fontMenu*utf8-fonts*Label:	UTF-8 Fonts
+XTerm*fontMenu*utf8-title*Label:	UTF-8 Titles
+XTerm*fontMenu*allow-color-ops*Label:	Allow Color Ops
+XTerm*fontMenu*allow-font-ops*Label:	Allow Font Ops
+XTerm*fontMenu*allow-mouse-ops*Label:	Allow Mouse Ops
+XTerm*fontMenu*allow-tcap-ops*Label:	Allow Termcap Ops
+XTerm*fontMenu*allow-title-ops*Label:	Allow Title Ops
+XTerm*fontMenu*allow-window-ops*Label:	Allow Window Ops
+! XTerm VT Fonts UTF-8
+XTerm*VT100.utf8Fonts.font2:	-misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1
+XTerm*VT100.utf8Fonts.font:	-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+XTerm*VT100.utf8Fonts.font3:	-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+XTerm*VT100.utf8Fonts.font4:	-misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
+XTerm*VT100.utf8Fonts.font5:	-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+XTerm*VT100.utf8Fonts.font6:	-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+
+! XTerm Menu Resources
+! XTerm SimepleMenu Resources
+XTerm*SimpleMenu*BackingStore:		NotUseful
+XTerm*SimpleMenu*menuLabel.font:	-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-iso8859-*
+XTerm*SimpleMenu*menuLabel.vertSpace:	100
+XTerm*SimpleMenu*HorizontalMargins:	16
+XTerm*SimpleMenu*Sme.height:		16
+XTerm*SimpleMenu*Cursor:		left_ptr
+! XTerm Main Options
+XTerm*mainMenu.Label:			Main Options
+XTerm*mainMenu*toolbar*Label:		Toolbar
+XTerm*mainMenu*fullscreen*Label:	Full Screen
+XTerm*mainMenu*securekbd*Label:		Secure Keyboard
+XTerm*mainMenu*allowsends*Label:	Allow SendEvents
+XTerm*mainMenu*redraw*Label:		Redraw Window
+XTerm*mainMenu*logging*Label:		Log to File
+XTerm*mainMenu*print-immediate*Label:	Print-All Immediately
+XTerm*mainMenu*print-on-error*Label:	Print-All on Error
+XTerm*mainMenu*print*Label:		Print Window
+XTerm*mainMenu*print-redir*Label:	Redirect to Printer
+XTerm*mainMenu*dump-html*Label:		XHTML Screen Dump
+XTerm*mainMenu*dump-svg*Label:		SVG Screen Dump
+XTerm*mainMenu*8-bit control*Label:	8-Bit Controls
+XTerm*mainMenu*backarrow key*Label:	Backarrow Key (BS/DEL)
+XTerm*mainMenu*num-lock*Label:		Alt/NumLock Modifiers
+XTerm*mainMenu*alt-esc*Label:		Alt Sends Escape
+XTerm*mainMenu*meta-esc*Label:		Meta Sends Escape
+XTerm*mainMenu*delete-is-del*Label:	Delete is DEL
+XTerm*mainMenu*oldFunctionKeys*Label:	Old Function-Keys
+XTerm*mainMenu*sunFunctionKeys*Label:	Sun Function-Keys
+XTerm*mainMenu*sunKeyboard*Label:	VT220 Keyboard
+XTerm*mainMenu*hpFunctionKeys*Label:	HP Function-Keys
+XTerm*mainMenu*scoFunctionKeys*Label:	SCO Function-Keys
+XTerm*mainMenu*tcapFunctionKeys*Label:	Termcap Function-Keys
+XTerm*mainMenu*suspend*Label:		Send STOP Signal
+XTerm*mainMenu*continue*Label:		Send CONT Signal
+XTerm*mainMenu*interrupt*Label:		Send INT Signal
+XTerm*mainMenu*hangup*Label:		Send HUP Signal
+XTerm*mainMenu*terminate*Label:		Send TERM Signal
+XTerm*mainMenu*kill*Label:		Send KILL Signal
+XTerm*mainMenu*quit*Label:		Quit
+! XTerm VT Options
+XTerm*vtMenu.Label:			VT Options
+XTerm*vtMenu*scrollbar*Label:		Enable Scrollbar
+XTerm*vtMenu*jumpscroll*Label:		Enable Jump Scroll
+XTerm*vtMenu*reversevideo*Label:	Enable Reverse Video
+XTerm*vtMenu*autowrap*Label:		Enable Auto Wraparound
+XTerm*vtMenu*reversewrap*Label:		Enable Reverse Wraparound
+XTerm*vtMenu*autolinefeed*Label:	Enable Auto Linefeed
+XTerm*vtMenu*appcursor*Label:		Enable Application Cursor Keys
+XTerm*vtMenu*appkeypad*Label:		Enable Application Keypad
+XTerm*vtMenu*scrollkey*Label:		Scroll to Bottom on Key Press
+XTerm*vtMenu*scrollttyoutput*Label:	Scroll to Bottom on Tty Output
+XTerm*vtMenu*allow132*Label:		Allow 80/132 Column Switching
+XTerm*vtMenu*keepSelection*Label:	Keep Selection
+XTerm*vtMenu*selectToClipboard*Label:	Select to Clipboard
+XTerm*vtMenu*cursesemul*Label:		Enable Curses Emulation
+XTerm*vtMenu*visualbell*Label:		Enable Visual Bell
+XTerm*vtMenu*bellIsUrgent*Label:	Enable Bell Urgency
+XTerm*vtMenu*poponbell*Label:		Enable Pop on Bell
+XTerm*vtMenu*cursorblink*Label:		Enable Blinking Cursor
+XTerm*vtMenu*titeInhibit*Label:		Enable Alternate Screen Switching
+XTerm*vtMenu*activeicon*Label:		Enable Active Icon
+XTerm*vtMenu*softreset*Label:		Do Soft Reset
+XTerm*vtMenu*hardreset*Label:		Do Full Reset
+XTerm*vtMenu*clearsavedlines*Label:	Reset and Clear Saved Lines
+XTerm*vtMenu*tekshow*Label:		Show Tek Window
+XTerm*vtMenu*tekmode*Label:		Switch to Tek Mode
+XTerm*vtMenu*vthide*Label:		Hide VT Window
+XTerm*vtMenu*altscreen*Label:		Show Alternate Screen
+XTerm*vtMenu*sixelScrolling*Label:	Sixel Scrolling
+XTerm*vtMenu*privateColorRegisters*Label:Private Color Registers
+! XTerm Tek Options
+XTerm*tekMenu.Label:			Tek Options
+XTerm*tekMenu*tektextlarge*Label:	Large Characters
+XTerm*tekMenu*tektext2*Label:		#2 Size Characters
+XTerm*tekMenu*tektext3*Label:		#3 Size Characters
+XTerm*tekMenu*tektextsmall*Label:	Small Characters
+XTerm*tekMenu*tekpage*Label:		PAGE
+XTerm*tekMenu*tekreset*Label:		RESET
+XTerm*tekMenu*tekcopy*Label:		COPY
+XTerm*tekMenu*vtshow*Label:		Show VT Window
+XTerm*tekMenu*vtmode*Label:		Switch to VT Mode
+XTerm*tekMenu*tekhide*Label:		Hide Tek Window
+
+! Tek4014 Widget Resources
+XTerm*tek4014*fontLarge:		9x15
+XTerm*tek4014*font2:			8x13
+XTerm*tek4014*font3:			6x13
+XTerm*tek4014*fontSmall:		6x10
+
+! XTerm MenuBar
+XTerm*form.Thickness:			0
+XTerm*menubar.borderWidth:		0
+XTerm*MenuButton*borderWidth:		0
+XTerm*SimpleMenu*borderWidth:		2
 
 ! copy & paste
 Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
 ~Shift~Ctrl<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0) \n\
 ~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
 ~Shift<BtnUp>: select-end(PRIMARY, CUT_BUFFER0)
-XTerm*VT100.Translations: #override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
-XTerm*selectToClipboard: true
+XTerm*VT100.Translations: 		#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO) \n\
+XTerm*selectToClipboard: 		true
 
-!Alt
-XTerm*eightBitInput:false
-XTerm*altSendsEscape:true
+! Alt
+XTerm*eightBitInput:			false
+XTerm*altSendsEscape:			true
 
-!Fonts
-XTerm*faceName:fixed:size=11
-XTerm*boldFont:fixed:size=11
+! Fonts
+XTerm*boldFont:			fixed:size=11
 !English font
-XTerm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=13:italic
+XTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13
 !Chinese font
-XTerm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13:italic
-
+XTerm*faceNameDoublesize:	WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
 
 !input method
-XTerm*inputMethod:fictx
+XTerm*inputMethod:		fictx
 
 !scrollbar
-XTerm*scrollBar: ture
-XTerm*rightScrollBar: true
-XTerm*SaveLines: 4096
-XTerm*jumpScroll: true
+!XTerm*scrollBar: 		false
+!XTerm*rightScrollBar: 		true
+XTerm*SaveLines: 		4096
+XTerm*jumpScroll: 		true
 
-!xterm.geometry: 80x36
-!XTerm*scrollBar: false
-!XTerm*rightScrollBar: true
-!XTerm*loginshell: ture
-!XTerm*cursorBlink: ture
-XTerm*background: #282A36
-XTerm*foreground: #F8F8F2
-!XTerm.borderLess: ture
-!XTerm.cursorBlink: ture
-XTerm*colorUL: #0000ff
-XTerm*colorBD: #00ff00
-XTerm*cursorColor: rgb:00/ff/00
-XTerm*borderColor: #000000
-XTerm*scrollColor: #000000
+!XTerm.geometry: 		80x36
+!XTerm*loginshell: 		true
+!XTerm*cursorBlink: 		true
+XTerm*background: 		#282A36
+XTerm*foreground: 		#F8F8F2
+!XTerm.borderLess: 		true
+!XTerm.cursorBlink: 		true
+XTerm*colorUL: 			#0000ff
+XTerm*colorBD: 			#00ff00
+XTerm*cursorColor: 		rgb:00/ff/00
+XTerm*borderColor: 		#000000
+XTerm*scrollColor: 		#000000
 
-XTerm*visualBell: false
-XTerm*allowSendEvents: True
-XTerm*sessionMgt: false
-XTerm*activeIcon: true
-XTerm*iconPixmap: /usr/share/icons/locolor/16x16/apps/xterm.xbm
-XTerm*fullscreen: never
+XTerm*visualBell: 		false
+XTerm*allowSendEvents: 		True
+XTerm*sessionMgt: 		false
+XTerm*activeIcon: 		true
+!XTerm*iconPixmap: 		/usr/share/icons/locolor/16x16/apps/xterm.xbm
+XTerm*fullscreen: 		never
 
-Xpdf.title: PDF
-Xft.dpi: 96
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
-!Xft.hintstyle: hintslight
-Xft.hintstyle:  hintfull
-Xft.lcdfilter:  lcdlegacy
+!XTerm*faceSize: 		20
+!XTerm*faceSize1: 		20
+!XTerm*faceSize2: 		20
+!XTerm*faceSize3: 		20
+!XTerm*faceSize4: 		20
+!XTerm*faceSize5: 		20
+!XTerm*faceSize6: 		20
+XTerm.cjkWidth:			true
+XTerm*xftAntialias:		true
 
-XTerm*locale: zh_CN.UTF-8
-
-!XTerm*faceSize: 20
-!XTerm*faceSize1: 20
-!XTerm*faceSize2: 20
-!XTerm*faceSize3: 20
-!XTerm*faceSize4: 20
-!XTerm*faceSize5: 20
-!XTerm*faceSize6: 20
-XTerm.cjkWidth:true
-XTerm*xftAntialias:true
+! Debian package customizations follow.
+XTerm*ptyInitialErase: 		true
 
 ! Dracula Xresources palette
 ! XTerm Color
-XTerm*color0:     #000000
-XTerm*color8:     #4D4D4D
-XTerm*color1:     #FF5555
-XTerm*color9:     #FF6E67
-XTerm*color2:     #50FA7B
-XTerm*color10:    #5AF78E
-XTerm*color3:     #F1FA8C
-XTerm*color11:    #F4F99D
-XTerm*color4:     #BD93F9
-XTerm*color12:    #CAA9FA
-XTerm*color5:     #FF79C6
-XTerm*color13:    #FF92D0
-XTerm*color6:     #8BE9FD
-XTerm*color14:    #9AEDFE
-XTerm*color7:     #BFBFBF
-XTerm*color15:    #E6E6E6
-! UXTerm Color
-UXTerm*color0:     #000000
-UXTerm*color8:     #4D4D4D
-UXTerm*color1:     #FF5555
-UXTerm*color9:     #FF6E67
-UXTerm*color2:     #50FA7B
-UXTerm*color10:    #5AF78E
-UXTerm*color3:     #F1FA8C
-UXTerm*color11:    #F4F99D
-UXTerm*color4:     #BD93F9
-UXTerm*color12:    #CAA9FA
-UXTerm*color5:     #FF79C6
-UXTerm*color13:    #FF92D0
-UXTerm*color6:     #8BE9FD
-UXTerm*color14:    #9AEDFE
-UXTerm*color7:     #BFBFBF
-UXTerm*color15:    #E6E6E6
+XTerm*color0:			#000000
+XTerm*color8:			#4D4D4D
+XTerm*color1:			#FF5555
+XTerm*color9:			#FF6E67
+XTerm*color2:			#50FA7B
+XTerm*color10:			#5AF78E
+XTerm*color3:			#F1FA8C
+XTerm*color11:			#F4F99D
+XTerm*color4:			#BD93F9
+XTerm*color12:			#CAA9FA
+XTerm*color5:			#FF79C6
+XTerm*color13:			#FF92D0
+XTerm*color6:			#8BE9FD
+XTerm*color14:			#9AEDFE
+XTerm*color7:			#BFBFBF
+XTerm*color15:			#E6E6E6
 
 !———————-
 !- End of setting Xterm
+!=========================
+
+! ## ------
+
+!===============================
+! - UXTerm Settings
+! ——————–
+
+!UXTerm font and locale
+UXTerm.locale:				true
+UXTerm.utf8: 				true
+UXTerm*utf8Title:			true
+UXTerm.VT100.utf8:			true
+UXTerm.VT100.locale:			true
+UXTerm*locale:				zh_CN.UTF-8
+UXTerm*fontMenu.Label:			VT Fonts
+UXTerm*fontMenu*fontdefault*Label:	Default
+UXTerm*fontMenu*font1*Label:		Unreadable
+UXTerm*VT100.font1:		nil2
+UXTerm*IconFont:		nil2
+UXTerm*fontMenu*font2*Label:	Tiny
+UXTerm*VT100.font2:		5x7
+UXTerm*fontMenu*font3*Label:	Small
+UXTerm*VT100.font3:		6x10
+UXTerm*fontMenu*font4*Label:	Medium
+UXTerm*VT100.font4:		7x13
+UXTerm*fontMenu*font5*Label:	Large
+UXTerm*VT100.font5:		9x15
+UXTerm*fontMenu*font6*Label:	Huge
+UXTerm*VT100.font6:		10x20
+UXTerm*fontMenu*fontescape*Label:	Escape Sequence
+UXTerm*fontMenu*fontsel*Label:		Selection
+! fontescape and fontsel overridden by application
+UXTerm*fontMenu*allow-bold-fonts*Label:	Bold Fonts
+UXTerm*fontMenu*font-linedrawing*Label:	Line-Drawing Characters
+UXTerm*fontMenu*font-doublesize*Label:	Doublesized Characters
+UXTerm*fontMenu*font-loadable*Label:	VT220 Soft Fonts
+UXTerm*fontMenu*font-packed*Label:	Packed Font
+UXTerm*fontMenu*render-font*Label:	TrueType Fonts
+UXTerm*fontMenu*utf8-mode*Label:	UTF-8 Encoding
+UXTerm*fontMenu*utf8-fonts*Label:	UTF-8 Fonts
+UXTerm*fontMenu*utf8-title*Label:	UTF-8 Titles
+UXTerm*fontMenu*allow-color-ops*Label:	Allow Color Ops
+UXTerm*fontMenu*allow-font-ops*Label:	Allow Font Ops
+UXTerm*fontMenu*allow-mouse-ops*Label:	Allow Mouse Ops
+UXTerm*fontMenu*allow-tcap-ops*Label:	Allow Termcap Ops
+UXTerm*fontMenu*allow-title-ops*Label:	Allow Title Ops
+UXTerm*fontMenu*allow-window-ops*Label:	Allow Window Ops
+! UXTerm VT Fonts UTF-8
+UXTerm*VT100.utf8Fonts.font2:	-misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1
+UXTerm*VT100.utf8Fonts.font:	-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+UXTerm*VT100.utf8Fonts.font3:	-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+UXTerm*VT100.utf8Fonts.font4:	-misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
+UXTerm*VT100.utf8Fonts.font5:	-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+UXTerm*VT100.utf8Fonts.font6:	-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+
+! XTerm Menu Resources
+! XTerm SimepleMenu Resources
+UXTerm*SimpleMenu*BackingStore:		NotUseful
+UXTerm*SimpleMenu*menuLabel.font:	-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-iso8859-*
+UXTerm*SimpleMenu*menuLabel.vertSpace:	100
+UXTerm*SimpleMenu*HorizontalMargins:	16
+UXTerm*SimpleMenu*Sme.height:		16
+UXTerm*SimpleMenu*Cursor:		left_ptr
+! UXTerm Main Options
+UXTerm*mainMenu.Label:			Main Options
+UXTerm*mainMenu*toolbar*Label:		Toolbar
+UXTerm*mainMenu*fullscreen*Label:	Full Screen
+UXTerm*mainMenu*securekbd*Label:	Secure Keyboard
+UXTerm*mainMenu*allowsends*Label:	Allow SendEvents
+UXTerm*mainMenu*redraw*Label:		Redraw Window
+UXTerm*mainMenu*logging*Label:		Log to File
+UXTerm*mainMenu*print-immediate*Label:	Print-All Immediately
+UXTerm*mainMenu*print-on-error*Label:	Print-All on Error
+UXTerm*mainMenu*print*Label:		Print Window
+UXTerm*mainMenu*print-redir*Label:	Redirect to Printer
+UXTerm*mainMenu*dump-html*Label:	XHTML Screen Dump
+UXTerm*mainMenu*dump-svg*Label:		SVG Screen Dump
+UXTerm*mainMenu*8-bit control*Label:	8-Bit Controls
+UXTerm*mainMenu*backarrow key*Label:	Backarrow Key (BS/DEL)
+UXTerm*mainMenu*num-lock*Label:		Alt/NumLock Modifiers
+UXTerm*mainMenu*alt-esc*Label:		Alt Sends Escape
+UXTerm*mainMenu*meta-esc*Label:		Meta Sends Escape
+UXTerm*mainMenu*delete-is-del*Label:	Delete is DEL
+UXTerm*mainMenu*oldFunctionKeys*Label:	Old Function-Keys
+UXTerm*mainMenu*sunFunctionKeys*Label:	Sun Function-Keys
+UXTerm*mainMenu*sunKeyboard*Label:	VT220 Keyboard
+UXTerm*mainMenu*hpFunctionKeys*Label:	HP Function-Keys
+UXTerm*mainMenu*scoFunctionKeys*Label:	SCO Function-Keys
+UXTerm*mainMenu*tcapFunctionKeys*Label:	Termcap Function-Keys
+UXTerm*mainMenu*suspend*Label:		Send STOP Signal
+UXTerm*mainMenu*continue*Label:		Send CONT Signal
+UXTerm*mainMenu*interrupt*Label:	Send INT Signal
+UXTerm*mainMenu*hangup*Label:		Send HUP Signal
+UXTerm*mainMenu*terminate*Label:	Send TERM Signal
+UXTerm*mainMenu*kill*Label:		Send KILL Signal
+UXTerm*mainMenu*quit*Label:		Quit
+! UXTerm VT Options
+UXTerm*vtMenu.Label:			VT Options
+UXTerm*vtMenu*scrollbar*Label:		Enable Scrollbar
+UXTerm*vtMenu*jumpscroll*Label:		Enable Jump Scroll
+UXTerm*vtMenu*reversevideo*Label:	Enable Reverse Video
+UXTerm*vtMenu*autowrap*Label:		Enable Auto Wraparound
+UXTerm*vtMenu*reversewrap*Label:	Enable Reverse Wraparound
+UXTerm*vtMenu*autolinefeed*Label:	Enable Auto Linefeed
+UXTerm*vtMenu*appcursor*Label:		Enable Application Cursor Keys
+UXTerm*vtMenu*appkeypad*Label:		Enable Application Keypad
+UXTerm*vtMenu*scrollkey*Label:		Scroll to Bottom on Key Press
+UXTerm*vtMenu*scrollttyoutput*Label:	Scroll to Bottom on Tty Output
+UXTerm*vtMenu*allow132*Label:		Allow 80/132 Column Switching
+UXTerm*vtMenu*keepSelection*Label:	Keep Selection
+UXTerm*vtMenu*selectToClipboard*Label:	Select to Clipboard
+UXTerm*vtMenu*cursesemul*Label:		Enable Curses Emulation
+UXTerm*vtMenu*visualbell*Label:		Enable Visual Bell
+UXTerm*vtMenu*bellIsUrgent*Label:	Enable Bell Urgency
+UXTerm*vtMenu*poponbell*Label:		Enable Pop on Bell
+UXTerm*vtMenu*cursorblink*Label:	Enable Blinking Cursor
+UXTerm*vtMenu*titeInhibit*Label:	Enable Alternate Screen Switching
+UXTerm*vtMenu*activeicon*Label:		Enable Active Icon
+UXTerm*vtMenu*softreset*Label:		Do Soft Reset
+UXTerm*vtMenu*hardreset*Label:		Do Full Reset
+UXTerm*vtMenu*clearsavedlines*Label:	Reset and Clear Saved Lines
+UXTerm*vtMenu*tekshow*Label:		Show Tek Window
+UXTerm*vtMenu*tekmode*Label:		Switch to Tek Mode
+UXTerm*vtMenu*vthide*Label:		Hide VT Window
+UXTerm*vtMenu*altscreen*Label:		Show Alternate Screen
+UXTerm*vtMenu*sixelScrolling*Label:	Sixel Scrolling
+UXTerm*vtMenu*privateColorRegisters*Label:Private Color Registers
+! UXTerm Tek Options
+UXTerm*tekMenu.Label:			Tek Options
+UXTerm*tekMenu*tektextlarge*Label:	Large Characters
+UXTerm*tekMenu*tektext2*Label:		#2 Size Characters
+UXTerm*tekMenu*tektext3*Label:		#3 Size Characters
+UXTerm*tekMenu*tektextsmall*Label:	Small Characters
+UXTerm*tekMenu*tekpage*Label:		PAGE
+UXTerm*tekMenu*tekreset*Label:		RESET
+UXTerm*tekMenu*tekcopy*Label:		COPY
+UXTerm*tekMenu*vtshow*Label:		Show VT Window
+UXTerm*tekMenu*vtmode*Label:		Switch to VT Mode
+UXTerm*tekMenu*tekhide*Label:		Hide Tek Window
+
+! Tek4014 Widget Resources
+UXTerm*tek4014*fontLarge:		9x15
+UXTerm*tek4014*font2:			8x13
+UXTerm*tek4014*font3:			6x13
+UXTerm*tek4014*fontSmall:		6x10
+
+! UXTerm MenuBar
+UXTerm*form.Thickness:			0
+UXTerm*menubar.borderWidth:		0
+UXTerm*MenuButton*borderWidth:		0
+UXTerm*SimpleMenu*borderWidth:		2
+
+! copy & paste
+UXTerm*VT100.Translations:		#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO)
+UXTerm*selectToClipboard:		true
+
+! Alt
+UXTerm*eightBitInput:			false
+UXTerm*altSendsEscape:			true
+
+! Fonts
+UXTerm*boldFont:			fixed:size=11
+!English font
+UXTerm*faceName: 			DejaVu Sans Mono:antialias=True:pixelsize=13
+!Chinese font
+UXTerm*faceNameDoublesize:		WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
+
+! input method
+UXTerm*inputMethod:			fictx
+
+! scrollbar
+!UXTerm*scrollBar:			false
+!UXTerm*rightScrollBar:			true
+UXTerm*SaveLines:			4096
+UXTerm*jumpScroll:			true
+
+!UXTerm.geometry:			80x36
+!UXTerm*loginshell:			true
+!UXTerm*cursorBlink:			true
+UXTerm*background:			#282A36
+UXTerm*foreground:			#F8F8F2
+!UXTerm.borderLess:			true
+!UXTerm.cursorBlink:			true
+UXTerm*colorUL:				#0000ff
+UXTerm*colorBD:				#00ff00
+UXTerm*cursorColor:			rgb:00/ff/00
+UXTerm*borderColor:			#000000
+UXTerm*scrollColor:			#000000
+
+UXTerm*visualBell:			false
+UXTerm*allowSendEvents:			True
+UXTerm*sessionMgt:			false
+UXTerm*activeIcon:			true
+!UXTerm*iconPixmap: 			/usr/share/icons/locolor/16x16/apps/xterm.xbm
+UXTerm*fullscreen: 			never
+
+!UXTerm*faceSize: 			20
+!UXTerm*faceSize1: 			20
+!UXTerm*faceSize2: 			20
+!UXTerm*faceSize3: 			20
+!UXTerm*faceSize4: 			20
+!UXTerm*faceSize5: 			20
+!UXTerm*faceSize6: 			20
+UXTerm.cjkWidth:			true
+UXTerm*xftAntialias:			true
+
+! Debian package customizations follow.
+UXTerm*ptyInitialErase: 		true
+
+! UXTerm Color
+UXTerm*color0:		#000000
+UXTerm*color8:		#4D4D4D
+UXTerm*color1:		#FF5555
+UXTerm*color9:		#FF6E67
+UXTerm*color2:		#50FA7B
+UXTerm*color10:		#5AF78E
+UXTerm*color3:		#F1FA8C
+UXTerm*color11:		#F4F99D
+UXTerm*color4:		#BD93F9
+UXTerm*color12:		#CAA9FA
+UXTerm*color5:		#FF79C6
+UXTerm*color13:		#FF92D0
+UXTerm*color6:		#8BE9FD
+UXTerm*color14:		#9AEDFE
+UXTerm*color7:		#BFBFBF
+UXTerm*color15:		#E6E6E6
+
+!———————-
+!- End of setting UXterm
+!=========================
+
+! ## ------
+
+!===============================
+! - Rxvt-Unicode Settings
+! ——————–
+
+!URxvt font and locale
+URxvt.locale:				true
+URxvt.utf8:				true
+URxvt*utf8Title:			true
+URxvt.VT100.utf8:			true
+URxvt.VT100.locale:			true
+URxvt*locale:				zh_CN.UTF-8
+URxvt*fontMenu.Label:			VT Fonts
+URxvt*fontMenu*fontdefault*Label:	Default
+URxvt*fontMenu*font1*Label:		Unreadable
+URxvt*VT100.font1:		nil2
+URxvt*IconFont:			nil2
+URxvt*fontMenu*font2*Label:	Tiny
+URxvt*VT100.font2:		5x7
+URxvt*fontMenu*font3*Label:	Small
+URxvt*VT100.font3:		6x10
+URxvt*fontMenu*font4*Label:	Medium
+URxvt*VT100.font4:		7x13
+URxvt*fontMenu*font5*Label:	Large
+URxvt*VT100.font5:		9x15
+URxvt*fontMenu*font6*Label:	Huge
+URxvt*VT100.font6:		10x20
+URxvt*fontMenu*fontescape*Label:	Escape Sequence
+URxvt*fontMenu*fontsel*Label:		Selection
+! fontescape and fontsel overridden by application
+URxvt*fontMenu*allow-bold-fonts*Label:	Bold Fonts
+URxvt*fontMenu*font-linedrawing*Label:	Line-Drawing Characters
+URxvt*fontMenu*font-doublesize*Label:	Doublesized Characters
+URxvt*fontMenu*font-loadable*Label:	VT220 Soft Fonts
+URxvt*fontMenu*font-packed*Label:	Packed Font
+URxvt*fontMenu*render-font*Label:	TrueType Fonts
+URxvt*fontMenu*utf8-mode*Label:		UTF-8 Encoding
+URxvt*fontMenu*utf8-fonts*Label:	UTF-8 Fonts
+URxvt*fontMenu*utf8-title*Label:	UTF-8 Titles
+URxvt*fontMenu*allow-color-ops*Label:	Allow Color Ops
+URxvt*fontMenu*allow-font-ops*Label:	Allow Font Ops
+URxvt*fontMenu*allow-mouse-ops*Label:	Allow Mouse Ops
+URxvt*fontMenu*allow-tcap-ops*Label:	Allow Termcap Ops
+URxvt*fontMenu*allow-title-ops*Label:	Allow Title Ops
+URxvt*fontMenu*allow-window-ops*Label:	Allow Window Ops
+! URxvt VT Fonts UTF-8
+URxvt*VT100.utf8Fonts.font2:	-misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1
+URxvt*VT100.utf8Fonts.font:	-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+URxvt*VT100.utf8Fonts.font3:	-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+URxvt*VT100.utf8Fonts.font4:	-misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
+URxvt*VT100.utf8Fonts.font5:	-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+URxvt*VT100.utf8Fonts.font6:	-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+
+! URxvt Menu Resources
+! URxvt SimepleMenu Resources
+URxvt*SimpleMenu*BackingStore:		NotUseful
+URxvt*SimpleMenu*menuLabel.font: 	-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-iso8859-*
+URxvt*SimpleMenu*menuLabel.vertSpace:	100
+URxvt*SimpleMenu*HorizontalMargins:	16
+URxvt*SimpleMenu*Sme.height:		16
+URxvt*SimpleMenu*Cursor:		left_ptr
+! URxvt Main Options
+URxvt*mainMenu.Label:			Main Options
+URxvt*mainMenu*toolbar*Label:		Toolbar
+URxvt*mainMenu*fullscreen*Label:	Full Screen
+URxvt*mainMenu*securekbd*Label:		Secure Keyboard
+URxvt*mainMenu*allowsends*Label:	Allow SendEvents
+URxvt*mainMenu*redraw*Label:		Redraw Window
+URxvt*mainMenu*logging*Label:		Log to File
+URxvt*mainMenu*print-immediate*Label:	Print-All Immediately
+URxvt*mainMenu*print-on-error*Label:	Print-All on Error
+URxvt*mainMenu*print*Label:		Print Window
+URxvt*mainMenu*print-redir*Label:	Redirect to Printer
+URxvt*mainMenu*dump-html*Label:		XHTML Screen Dump
+URxvt*mainMenu*dump-svg*Label:		SVG Screen Dump
+URxvt*mainMenu*8-bit control*Label:	8-Bit Controls
+URxvt*mainMenu*backarrow key*Label:	Backarrow Key (BS/DEL)
+URxvt*mainMenu*num-lock*Label:		Alt/NumLock Modifiers
+URxvt*mainMenu*alt-esc*Label:		Alt Sends Escape
+URxvt*mainMenu*meta-esc*Label:		Meta Sends Escape
+URxvt*mainMenu*delete-is-del*Label:	Delete is DEL
+URxvt*mainMenu*oldFunctionKeys*Label:	Old Function-Keys
+URxvt*mainMenu*sunFunctionKeys*Label:	Sun Function-Keys
+URxvt*mainMenu*sunKeyboard*Label:	VT220 Keyboard
+URxvt*mainMenu*hpFunctionKeys*Label:	HP Function-Keys
+URxvt*mainMenu*scoFunctionKeys*Label:	SCO Function-Keys
+URxvt*mainMenu*tcapFunctionKeys*Label:	Termcap Function-Keys
+URxvt*mainMenu*suspend*Label:		Send STOP Signal
+URxvt*mainMenu*continue*Label:		Send CONT Signal
+URxvt*mainMenu*interrupt*Label:		Send INT Signal
+URxvt*mainMenu*hangup*Label:		Send HUP Signal
+URxvt*mainMenu*terminate*Label:		Send TERM Signal
+URxvt*mainMenu*kill*Label:		Send KILL Signal
+URxvt*mainMenu*quit*Label:		Quit
+! URxvt VT Options
+URxvtvtMenu.Label:			VT Options
+URxvt*vtMenu*scrollbar*Label:		Enable Scrollbar
+URxvt*vtMenu*jumpscroll*Label:		Enable Jump Scroll
+URxvt*vtMenu*reversevideo*Label:	Enable Reverse Video
+URxvt*vtMenu*autowrap*Label:		Enable Auto Wraparound
+URxvt*vtMenu*reversewrap*Label:		Enable Reverse Wraparound
+URxvt*vtMenu*autolinefeed*Label:	Enable Auto Linefeed
+URxvt*vtMenu*appcursor*Label:		Enable Application Cursor Keys
+URxvt*vtMenu*appkeypad*Label:		Enable Application Keypad
+URxvt*vtMenu*scrollkey*Label:		Scroll to Bottom on Key Press
+URxvt*vtMenu*scrollttyoutput*Label:	Scroll to Bottom on Tty Output
+URxvt*vtMenu*allow132*Label:		Allow 80/132 Column Switching
+URxvt*vtMenu*keepSelection*Label:	Keep Selection
+URxvt*vtMenu*selectToClipboard*Label:	Select to Clipboard
+URxvt*vtMenu*cursesemul*Label:		Enable Curses Emulation
+URxvt*vtMenu*visualbell*Label:		Enable Visual Bell
+URxvt*vtMenu*bellIsUrgent*Label:	Enable Bell Urgency
+URxvt*vtMenu*poponbell*Label:		Enable Pop on Bell
+URxvt*vtMenu*cursorblink*Label:		Enable Blinking Cursor
+URxvt*vtMenu*titeInhibit*Label:		Enable Alternate Screen Switching
+URxvt*vtMenu*activeicon*Label:		Enable Active Icon
+URxvt*vtMenu*softreset*Label:		Do Soft Reset
+URxvt*vtMenu*hardreset*Label:		Do Full Reset
+URxvt*vtMenu*clearsavedlines*Label:	Reset and Clear Saved Lines
+URxvt*vtMenu*tekshow*Label:		Show Tek Window
+URxvt*vtMenu*tekmode*Label:		Switch to Tek Mode
+URxvt*vtMenu*vthide*Label:		Hide VT Window
+URxvt*vtMenu*altscreen*Label:		Show Alternate Screen
+URxvt*vtMenu*sixelScrolling*Label:	Sixel Scrolling
+URxvt*vtMenu*privateColorRegisters*Label:Private Color Registers
+! URxvt Tek Options
+URxvt*tekMenu.Label:			Tek Options
+URxvt*tekMenu*tektextlarge*Label:	Large Characters
+URxvt*tekMenu*tektext2*Label:		#2 Size Characters
+URxvt*tekMenu*tektext3*Label:		#3 Size Characters
+URxvt*tekMenu*tektextsmall*Label:	Small Characters
+URxvt*tekMenu*tekpage*Label:		PAGE
+URxvt*tekMenu*tekreset*Label:		RESET
+URxvt*tekMenu*tekcopy*Label:		COPY
+URxvt*tekMenu*vtshow*Label:		Show VT Window
+URxvt*tekMenu*vtmode*Label:		Switch to VT Mode
+URxvt*tekMenu*tekhide*Label:		Hide Tek Window
+
+! Tek4014 Widget Resources
+URxvt*tek4014*fontLarge:		9x15
+URxvt*tek4014*font2:			8x13
+URxvt*tek4014*font3:			6x13
+URxvt*tek4014*fontSmall:		6x10
+
+! URxvt MenuBar
+URxvt*form.Thickness:			0
+URxvt*menubar.borderWidth:		0
+URxvt*MenuButton*borderWidth:		0
+URxvt*SimpleMenu*borderWidth:		2
+
+! copy & paste
+URxvt*VT100.Translations: 		#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO) \n\
+URxvt*selectToClipboard: 		true
+
+! Alt
+URxvt*eightBitInput:			false
+URxvt*altSendsEscape:			true
+
+! Fonts
+URxvt*boldFont:fixed:			size=11
+!English font
+URxvt*faceName:				DejaVu Sans Mono:antialias=True:pixelsize=13
+!Chinese font
+URxvt*faceNameDoublesize:		WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
+
+!input method
+URxvt*inputMethod:			fictx
+
+! Fix errors
+URxvt*skipBuiltinGlyphs:		true
+
+!scrollbar
+!URxvt*scrollBar:			false
+!URxvt*rightScrollBar:			true
+URxvt*SaveLines:			4096
+URxvt*jumpScroll:			true
+
+!URxvt.geometry:			80x36
+!URxvt*loginshell:			true
+!URxvt*cursorBlink:			true
+URxvt*background:			[90]#282A36
+URxvt*foreground:			#F8F8F2
+!URxvt.borderLess:			true
+!URxvt.cursorBlink:			true
+URxvt*colorUL:				#0000ff
+URxvt*colorBD:				#00ff00
+URxvt*cursorColor:			rgb:00/ff/00
+URxvt*borderColor:			#000000
+URxvt*scrollColor:			#000000
+
+URxvt*visualBell:			false
+URxvt*allowSendEvents:			True
+URxvt*sessionMgt:			false
+URxvt*activeIcon:			true
+!URxvt*iconPixmap:			/usr/share/icons/locolor/16x16/apps/xterm.xbm
+URxvt*fullscreen:			never
+
+!URxvt*faceSize:			20
+!URxvt*faceSize1:			20
+!URxvt*faceSize2:			20
+!URxvt*faceSize3:			20
+!URxvt*faceSize4:			20
+!URxvt*faceSize5:			20
+!URxvt*faceSize6:			20
+URxvt.cjkWidth:				true
+URxvt*xftAntialias:			true
+
+! Debian package customizations follow.
+URxvt*ptyInitialErase:			true
+
+! Dracula Xresources palette
+! URxvt Color
+URxvt*color0:		#000000
+URxvt*color8:		#4D4D4D
+URxvt*color1:		#FF5555
+URxvt*color9:		#FF6E67
+URxvt*color2:		#50FA7B
+URxvt*color10:		#5AF78E
+URxvt*color3:		#F1FA8C
+URxvt*color11:		#F4F99D
+URxvt*color4:		#BD93F9
+URxvt*color12:		#CAA9FA
+URxvt*color5:		#FF79C6
+URxvt*color13:		#FF92D0
+URxvt*color6:		#8BE9FD
+URxvt*color14:		#9AEDFE
+URxvt*color7:		#BFBFBF
+URxvt*color15:		#E6E6E6
+
+!———————-
+!- End of setting Rxvt-Unicode
+!=========================
+
+! ## ------
+
+!===============================
+! - Others Settings
+! ——————–
+
+Xpdf.title:	PDF
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.rgba:	rgb
+Xft.hinting:	true
+!Xft.hintstyle:	hintslight
+Xft.hintstyle:	hintfull
+Xft.lcdfilter:	lcdlegacy
+
+!———————-
+!- End of setting Others
 !=========================
