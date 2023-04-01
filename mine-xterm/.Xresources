@@ -148,12 +148,17 @@ XTerm*MenuButton*borderWidth:		0
 XTerm*SimpleMenu*borderWidth:		2
 
 ! copy & paste
-Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
-~Shift~Ctrl<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0) \n\
-~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
-~Shift<BtnUp>: select-end(PRIMARY, CUT_BUFFER0)
-XTerm*VT100.Translations: 		#override <Btn1UP>:select-end(PRIMARY,CLIPBOARD,CUT_BUFFERO) \n\
+XTerm*VT100.Translations: 		#override
 XTerm*selectToClipboard: 		true
+	Ctrl <Key>M: maximize() \n\
+	Ctrl <Key>R: restore() \n\
+	<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+	Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+	~Shift~Ctrl<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0) \n\
+	~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
+	~Shift<BtnUp>: select-end(PRIMARY, CUT_BUFFER0)
 
 ! Alt
 XTerm*eightBitInput:			false
@@ -184,7 +189,7 @@ XTerm*foreground: 		#F8F8F2
 !XTerm.cursorBlink: 		true
 XTerm*colorUL: 			#0000ff
 XTerm*colorBD: 			#00ff00
-XTerm*cursorColor: 		rgb:00/ff/00
+XTerm*cursorColor: 		#00cd00
 XTerm*borderColor: 		#000000
 XTerm*scrollColor: 		#000000
 
@@ -415,7 +420,7 @@ UXTerm*foreground:			#F8F8F2
 !UXTerm.cursorBlink:			true
 UXTerm*colorUL:				#0000ff
 UXTerm*colorBD:				#00ff00
-UXTerm*cursorColor:			rgb:00/ff/00
+UXTerm*cursorColor:			#00cd00
 UXTerm*borderColor:			#000000
 UXTerm*scrollColor:			#000000
 
@@ -648,7 +653,7 @@ URxvt*foreground:			#F8F8F2
 !URxvt.cursorBlink:			true
 URxvt*colorUL:				#0000ff
 URxvt*colorBD:				#00ff00
-URxvt*cursorColor:			rgb:00/ff/00
+URxvt*cursorColor:			#00cd00
 URxvt*borderColor:			#000000
 URxvt*scrollColor:			#000000
 
