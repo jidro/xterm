@@ -1,5 +1,9 @@
 #!/bin/env bash
 
+# It is possible that there is no /etc/X11/appdefaults/ folder. 
+# If there is no such folder, create it
+sudo mkdir -pv /etc/X11/appdefaults/
+
 # Change the xterm individual user configuration to the repository's configuration file.
 mv -v ~/.Xresources ~/.Xresources.bak
 cp -rfpv .Xresources ~/
