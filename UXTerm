@@ -284,7 +284,8 @@ UXTerm*inputMethod:			fictx
 UXTerm*boldFont:			fixed:size=11
 !English font
 !UXTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13:italic
-UXTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13!scrollbar
+UXTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13
+!UXTerm*faceName:			JetBrains Mono:antialias=True:pixelsize=13
 !Chinese font
 !UXTerm*faceNameDoublesize:	WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13:italic
 UXTerm*faceNameDoublesize:	WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
@@ -302,14 +303,14 @@ UXTerm*background: 		#282A36
 UXTerm*foreground: 		#F8F8F2
 !UXTerm.borderLess: 		true
 !UXTerm.cursorBlink: 		true
-UXTerm*colorUL: 			#0000ff
-UXTerm*colorBD: 			#00ff00
+UXTerm*colorUL: 		#0000ff
+UXTerm*colorBD: 		#00ff00
 UXTerm*cursorColor: 		#00cd00
 UXTerm*borderColor: 		#000000
 UXTerm*scrollColor: 		#000000
 
 UXTerm*visualBell: 		false
-UXTerm*allowSendEvents: 		True
+UXTerm*allowSendEvents: 	True
 UXTerm*sessionMgt: 		false
 UXTerm*activeIcon: 		true
 !UXTerm*iconPixmap: 		/usr/share/icons/locolor/16x16/apps/xterm.xbm
@@ -322,11 +323,11 @@ UXTerm*fullscreen: 		never
 !UXTerm*faceSize4: 		20
 !UXTerm*faceSize5: 		20
 !UXTerm*faceSize6: 		20
-UXTerm.cjkWidth:			true
+UXTerm.cjkWidth:		true
 UXTerm*xftAntialias:		true
 
 ! Debian package customizations follow.
-UXTerm*ptyInitialErase: 		true
+UXTerm*ptyInitialErase: 	true
 
 ! Dracula Xresources palette
 ! UXTerm Color

@@ -161,6 +161,7 @@ XTerm*altSendsEscape:			true
 XTerm*boldFont:			fixed:size=11
 !English font
 XTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13
+!XTerm*faceName:			JetBrains Mono:antialias=True:pixelsize=13
 !Chinese font
 XTerm*faceNameDoublesize:	WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
 
@@ -392,6 +393,7 @@ UXTerm*altSendsEscape:			true
 UXTerm*boldFont:			fixed:size=11
 !English font
 UXTerm*faceName: 			DejaVu Sans Mono:antialias=True:pixelsize=13
+!UXTerm*faceName: 			JetBrains Mono:antialias=True:pixelsize=13
 !Chinese font
 UXTerm*faceNameDoublesize:		WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
 
@@ -622,6 +624,7 @@ URxvt*altSendsEscape:			true
 URxvt*boldFont:fixed:			size=11
 !English font
 URxvt*faceName:				DejaVu Sans Mono:antialias=True:pixelsize=13
+!URxvt*faceName:				JetBrains Mono:antialias=True:pixelsize=13
 !Chinese font
 URxvt*faceNameDoublesize:		WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
 

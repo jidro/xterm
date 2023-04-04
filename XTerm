@@ -284,7 +284,8 @@ XTerm*inputMethod:			fictx
 XTerm*boldFont:			fixed:size=11
 !English font
 !XTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13:italic
-XTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13!scrollbar
+XTerm*faceName:			DejaVu Sans Mono:antialias=True:pixelsize=13
+!XTerm*faceName:			JetBrains Mono:antialias=True:pixelsize=13
 !Chinese font
 !XTerm*faceNameDoublesize:	WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13:italic
 XTerm*faceNameDoublesize:	WenQuanYi Zen Hei Mono:antialias=True:pixelsize=13
